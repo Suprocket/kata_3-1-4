@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "TT Lakers";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "TT Lakers";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "TT Lakers";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+}
+
+
+
+
+.fs-14px{
+    font-size: 14px;
+}
+
+.fs-16px{
+    font-size: 16px;
+}
+
+.fs-28px{
+    font-size: 28px;
+}
