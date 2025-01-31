@@ -17,10 +17,68 @@
     src: url("../assets/fonts/TTLakes/TTLakes-Bold.woff") format("woff");
 }
 
+.button-reset{
+    border: none;
+    cursor: pointer;
+}
 
-body{
-    max-width: 320px;
-    margin: 0 auto;
+.header{
+    background: #fff;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 16px;
+    gap: 16px;
+}
+.header__left{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.header__menu{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3E79;
+}
+
+.header__actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.header__actions:before{
+    content: "";
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+    background: #EAEAEA;
+    align-self: center;
+    border-radius: 2px;
+}
+
+.header__actions a:nth-child(-n+3) {
+    display: none;
+}
+
+.header__action{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #FF3E79;
+    border-radius: 50%;
 }
 
 .fs-14px{
