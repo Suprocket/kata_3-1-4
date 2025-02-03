@@ -17,9 +17,28 @@
     src: url("../assets/fonts/TTLakes/TTLakes-Bold.woff") format("woff");
 }
 
+:root {
+    --main-white-color: #ffffff;
+    --main-background-color: #F8F8F8;
+    --accent-color: #41F6D7;
+    --main-text-color: #1B1C21;
+    --accent-text-color: #7E7E82;
+    --icon-color: #FF3E79;
+}
+.body{
+    margin: auto;
+}
+.main-font{
+    font-family: "TT Lakers", serif;
+}
+
 .button-reset{
     border: none;
     cursor: pointer;
+    background: var(--main-white-color);
+}
+.list-reset{
+    list-style-type: none;
 }
 
 .header{
@@ -47,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FF3E79;
+    background: var(--icon-color);
 }
 
 .header__actions{
@@ -60,7 +79,6 @@
     content: "";
     width: 2px;
     height: 32px;
-    background: #EAEAEA;
     background: #EAEAEA;
     align-self: center;
     border-radius: 2px;
@@ -77,8 +95,83 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #FF3E79;
+    background: var(--icon-color);
     border-radius: 50%;
+}
+
+.main__title {
+    position: relative;
+    padding-left: 14px;
+}
+
+.main__title::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 40px;
+    border-radius: 30%;
+    background: var(--accent-color);
+}
+
+.main__navigation{
+    overflow: auto;
+}
+.main__navigation-list{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-left:16px;
+}
+.main__navigation-list>li:first-child{
+    display: none;
+}
+
+.main__navigation-list-item{
+    padding: 8px 16px;
+    background: var(--main-white-color);
+}
+.main__navigation-list-item-link {
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--accent-text-color);
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.main__navigation-list-item_active{
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main__content-text{
+    margin:0 16px;
+}
+.main__content-read-more{
+    margin-left: 16px;
+    align-self: flex-start;
+    position: relative;
+    padding-left: 30px;
+}
+.main__content-read-more::before {
+    content: url("../assets/icons/icon_scroll-arrows.svg");
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main__content-img {
+    width: 320px;
+    height: auto;
+    display: block;
 }
 
 .fs-14px{
