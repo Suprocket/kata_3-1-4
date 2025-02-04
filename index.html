@@ -19,13 +19,13 @@
             </a>
         </div>
         <nav class="header__actions">
-            <a href="#" class="header__action">1
+            <a href="#" class="header__action">
                 <img src="assets/icons/icon_phone.svg" alt="Телефон">
             </a>
-            <a href="#" class="header__action">2
+            <a href="#" class="header__action">
                 <img src="assets/icons/icon_message.svg" alt="Сообщение">
             </a>
-            <a href="#" class="header__action">3
+            <a href="#" class="header__action">
                 <img src="assets/icons/icon_client.svg" alt="Персональный раздел">
             </a>
             <a href="#" class="header__action">
@@ -40,7 +40,19 @@
 
 <main class="main">
     <div class="main__header">
-        <h1 class="main__title fs-28px">Услуги и сервисы</h1>
+        <div class="main__header-container">
+            <h1 class="main__title fs-28px">Услуги и сервисы</h1>
+            <nav class="main__nav-1024px">
+                <a href="#" class="main__nav-link link-style-reset fs-16px">
+                    <span class="main__nav-text">Оставить заявку</span>
+                    <img src="assets/icons/icon_refactor.svg" alt="Сервис">
+                </a>
+                <a href="#" class="main__nav-link link-style-reset fs-16px">
+                    <span class="main__nav-text">Статус ремонта</span>
+                    <img src="assets/icons/icon_search.svg" alt="Поиск">
+                </a>
+            </nav>
+        </div>
         <div class="main__menu">
             <nav class="main__navigation">
                 <ul class="main__navigation-list">
@@ -74,12 +86,26 @@
         </div>
     </div>
     <div class="main__content">
-        <p class="main__content-text fs-14px">
-            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать
-            свой ноутбук Dell с официальной гарантией производителя.
-        </p>
-        <button class="main__content-read-more button-reset fs-16px">Читать далее</button>
-        <img class="main__content-img" src="assets/img/img_repair_devices.png" alt="Ремонт устройств">
+        <div class="main__content-left-side">
+            <p class="main__content-text fs-14px">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                отремонтировать
+                свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p class="main__content-text text-for-768px fs-14px">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+            </p>
+            <p class="main__content-text text-for-1024px fs-14px">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+            </p>
+            <button class="main__content-read-more button-reset fs-16px">Читать далее</button>
+        </div>
+        <div class="main__content-right-side">
+            <img class="main__content-img" src="assets/img/img_repair_devices.png" alt="Ремонт устройств">
+        </div>
+
     </div>
 
 
