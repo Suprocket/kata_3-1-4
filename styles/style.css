@@ -168,7 +168,7 @@
     letter-spacing: -0.2px;
 }
 
-.main__navigation-list-item_active {
+.main__navigation-list-item--active {
     border: 2px solid var(--accent-color);
     border-radius: 6px;
 }
@@ -325,7 +325,7 @@
     }
 
     /*переделать active, когда добавим js в проект */
-    .main__navigation-list-item_active:nth-child(2) {
+    .main__navigation-list-item--active:nth-child(2) {
         border: none;
     }
 
