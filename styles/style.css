@@ -126,6 +126,7 @@
 .main__title {
     position: relative;
     padding-left: 14px;
+    font-size: 28px;
 }
 
 .main__title::before {
@@ -166,6 +167,7 @@
     color: var(--accent-text-color);
     line-height: 24px;
     letter-spacing: -0.2px;
+    font-size: 16px;
 }
 
 .main__navigation-list-item--active {
@@ -183,6 +185,7 @@
 .main__content-text {
     margin: 0 16px;
     padding-bottom: 16px;
+    font-size: 14px;
 }
 
 .main__content-read-more {
@@ -190,6 +193,7 @@
     align-self: flex-start;
     position: relative;
     padding-left: 30px;
+    font-size: 16px;
 }
 
 .main__content-read-more::before {
@@ -204,18 +208,6 @@
     width: 320px;
     height: auto;
     display: block;
-}
-
-.fs-14px {
-    font-size: 14px;
-}
-
-.fs-16px {
-    font-size: 16px;
-}
-
-.fs-28px {
-    font-size: 28px;
 }
 
 @media (min-width: 768px) {
@@ -299,6 +291,7 @@
         height: 40px;
         background: var(--icon-color);
         border-radius: 50%;
+        font-size: 16px;
     }
 
     .main__nav-text {
