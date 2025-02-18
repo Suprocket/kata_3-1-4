@@ -26,10 +26,12 @@
     --main-text-color: #1B1C21;
     --accent-text-color: #7E7E82;
     --icon-color: #FF3E79;
+    --background-color: #F8F8F8;
 }
 
 .body {
     margin: auto;
+    background-color: var(--background-color);
 }
 
 .main-font {
@@ -62,12 +64,16 @@
     color: #000;
     text-decoration: none;
 }
-
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
 .header {
     background: #fff;
 }
 
 .header__container {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -152,19 +158,16 @@
     margin-left: 16px;
 }
 
-.main__navigation-list > li:first-child {
-    display: none;
-}
-
 .main__navigation-list-item {
     padding: 8px 16px;
-    background: var(--main-white-color);
+    background: var(--main-background-color);
 }
 
 .main__navigation-list-item-link {
     font-weight: 500;
     white-space: nowrap;
     color: var(--accent-text-color);
+    background: var(--main-background-color);
     line-height: 24px;
     letter-spacing: -0.2px;
     font-size: 16px;
@@ -172,14 +175,18 @@
 
 .main__navigation-list-item--active {
     border: 2px solid var(--accent-color);
+    background: var(--main-white-color);
     border-radius: 6px;
+}
+.main__navigation-list-item-link--active{
+    background: var(--main-white-color);
 }
 
 .main__content {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
 }
 
 .main__content-text {
@@ -190,10 +197,12 @@
 
 .main__content-read-more {
     margin-left: 16px;
+    margin-bottom: 16px;
     align-self: flex-start;
     position: relative;
     padding-left: 30px;
     font-size: 16px;
+    background: var(--main-background-color);
 }
 
 .main__content-read-more::before {
@@ -205,7 +214,7 @@
 }
 
 .main__content-img {
-    width: 320px;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -219,10 +228,6 @@
 
     .header__actions a:nth-child(4) {
         margin-left: 15px;
-    }
-
-    .main__navigation-list > li:nth-child(5) {
-        display: none;
     }
 
     .header__actions::before {
@@ -243,8 +248,7 @@
     .main__content {
         flex-direction: row;
         margin-top: 32px;
-        gap: 48px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .main__content-left-side {
@@ -279,7 +283,7 @@
         flex-direction: row;
         align-items: center;
         gap: 160px;
-        margin-right: 50px;
+        gap: 160px;
     }
 
     .main__nav-link {
