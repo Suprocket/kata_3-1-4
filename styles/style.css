@@ -94,9 +94,14 @@
     align-items: center;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
 .button-menu {
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -221,6 +226,7 @@
     margin: 18px 23px 32px 23px;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .aside-list{
@@ -252,10 +258,7 @@
     border-radius: 30%;
     background: var(--accent-color);
 }
-.aside__main{
 
-    margin-bottom: 100px;
-}
 .footer__bottom-mail{
     font-family: "TT Lakers", serif;
     font-size: 16px;
@@ -268,10 +271,11 @@
     font-weight: bold;
 }
 
-.footer{
+.aside__footer{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 40%;
 }
 .footer__bottom{
     display: flex;
@@ -286,6 +290,11 @@
 }
 .languages-link{
     font-size: 16px;
+    font-weight: 500;
+    font-family: "TT Lakers", serif;
+}
+.languages-link--active{
+    color: var(--accent-text-color);
     font-weight: 400;
 }
 @media (min-width: 768px) {
@@ -337,7 +346,7 @@
 }
 
 @media (min-width: 1024px) {
-    .header {
+    .header__main {
         display: none;
     }
 
