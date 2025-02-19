@@ -107,6 +107,11 @@
     justify-content: center;
     align-items: center;
     background: var(--icon-color);
+    cursor: pointer;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.button-menu:hover {
+    opacity: 0.7;
 }
 
 .nav {
