@@ -243,6 +243,7 @@
 .aside-list__item-link{
     font-size: 16px;
     font-family: "TT Lakers", serif;
+    cursor: pointer;
     font-weight: 500;
     line-height: 24px;
     color: var(--main-text-color);
