@@ -29,9 +29,6 @@
     --background-color: #F8F8F8;
 }
 
-*{
-    border: 1px solid #f0f;
-}
 .body {
     margin: auto;
     background-color: var(--background-color);
@@ -232,14 +229,21 @@
 }
 .aside{
     height: 100vh;
+    box-sizing: border-box;
     max-width: 320px !important;
     box-shadow: 16px 0 52px 0 #0E185033, -2px 0 4px #454F7E05;
 }
 .aside__container{
+    box-sizing: border-box;
     padding: 18px 23px 32px 23px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
+}
+.aside__container-top{
+    display: flex;
+    flex-direction: column;
 }
 
 .aside-list{
