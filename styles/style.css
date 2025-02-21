@@ -305,10 +305,10 @@
     gap: 5px;
     padding-bottom: 15px;
 }
-.languages-list-item{
+.languages-list__item{
     transition: background-color 0.3s ease, filter 0.3s ease;
 }
-.languages-list-item:hover{
+.languages-list__item:hover{
     opacity: 0.7;
 }
 .languages-link{
