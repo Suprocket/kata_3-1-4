@@ -56,13 +56,10 @@
     display: none;
 }
 
-.list-reset {
+.list-and-link-reset {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.link-style-reset {
     color: #000;
     text-decoration: none;
 }
@@ -70,28 +67,15 @@
     max-width: 1120px;
     margin: 0 auto;
 }
-.header {
+.header-mobile {
     background: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-}
-
-.header__container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 18px 16px;
     gap: 16px;
 }
-
-.header__left {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
+.header-mobile .button-menu:last-of-type{
+    margin-left: auto;
 }
 
 .logo{
@@ -237,27 +221,23 @@
     box-sizing: border-box;
     max-width: 320px !important;
     box-shadow: 16px 0 52px 0 #0E185033, -2px 0 4px #454F7E05;
-}
-.aside__container{
-    box-sizing: border-box;
     padding: 18px 23px 32px 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
 }
-.aside__container-top{
+.aside__top{
     display: flex;
     flex-direction: column;
 }
 
-.aside-list{
+.aside-nav__list{
     display: flex;
     flex-direction: column;
     gap: 32px;
     margin: 46px 0 32px 0;
 }
-.aside-list__item-link{
+.aside-nav__link{
     font-size: 16px;
     font-family: "TT Lakers", serif;
     cursor: pointer;
@@ -266,15 +246,15 @@
     color: var(--main-text-color);
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.aside-list__item-link:hover{
+.aside-nav__link:hover{
     opacity: 0.7;
 }
-.aside-list__item--active{
+.aside-nav__link--active{
     color: var(--accent-text-color);
     position: relative;
 
 }
-.aside-list__item--active::before{
+.aside-nav__item--active::before{
     content: "";
     position: absolute;
     left: -33px;
@@ -285,35 +265,39 @@
     border-radius: 30%;
     background: var(--accent-color);
 }
-
-.footer__bottom-mail{
+.aside-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.aside-footer__list{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.footer__contacts{
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer__contacts-mail{
     font-family: "TT Lakers", serif;
     font-size: 16px;
     line-height: 24px;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.footer__bottom-mail:hover{
+.footer__contacts-mail:hover{
     opacity: 0.7;
 }
-.footer__bottom-phone{
+.footer__contacts-phone{
     font-family: "TT Lakers", serif;
     font-size: 20px;
     font-weight: bold;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.footer__bottom-phone:hover{
+.footer__contacts-phone:hover{
     opacity: 0.7;
-}
-
-.aside__footer{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.footer__bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 .languages-list{
     display: flex;
