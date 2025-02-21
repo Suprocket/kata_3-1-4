@@ -97,6 +97,10 @@
 .logo{
     display: flex;
     justify-content: center;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.logo:hover {
+    opacity: 0.7;
 }
 
 .button-menu {
@@ -229,6 +233,7 @@
 }
 .aside{
     height: 100vh;
+    background-color: var(--main-white-color);
     box-sizing: border-box;
     max-width: 320px !important;
     box-shadow: 16px 0 52px 0 #0E185033, -2px 0 4px #454F7E05;
@@ -259,6 +264,10 @@
     font-weight: 500;
     line-height: 24px;
     color: var(--main-text-color);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.aside-list__item-link:hover{
+    opacity: 0.7;
 }
 .aside-list__item--active{
     color: var(--accent-text-color);
@@ -281,12 +290,19 @@
     font-family: "TT Lakers", serif;
     font-size: 16px;
     line-height: 24px;
+    transition: opacity 0.3s ease, filter 0.3s ease;
 }
-
+.footer__bottom-mail:hover{
+    opacity: 0.7;
+}
 .footer__bottom-phone{
     font-family: "TT Lakers", serif;
     font-size: 20px;
     font-weight: bold;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.footer__bottom-phone:hover{
+    opacity: 0.7;
 }
 
 .aside__footer{
@@ -304,6 +320,12 @@
     flex-direction: row;
     gap: 5px;
     margin-top: 30px;
+}
+.languages-list-item{
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+.languages-list-item:hover{
+    opacity: 0.7;
 }
 .languages-link{
     font-size: 16px;
