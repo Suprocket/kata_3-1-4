@@ -63,10 +63,12 @@
     color: #000;
     text-decoration: none;
 }
-.container{
+
+.container {
     max-width: 1120px;
     margin: 0 auto;
 }
+
 .header-mobile {
     background: #fff;
     display: flex;
@@ -74,15 +76,17 @@
     align-items: center;
     gap: 16px;
 }
-.header-mobile .button-menu:last-of-type{
+
+.header-mobile .button-menu:last-of-type {
     margin-left: auto;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
+
 .logo:hover {
     opacity: 0.7;
 }
@@ -98,6 +102,7 @@
     cursor: pointer;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
+
 .button-menu:hover {
     opacity: 0.7;
 }
@@ -171,7 +176,8 @@
     background: var(--main-white-color);
     border-radius: 6px;
 }
-.main__navigation-list-item-link--active{
+
+.main__navigation-list-item-link--active {
     background: var(--main-white-color);
 }
 
@@ -211,11 +217,13 @@
     height: auto;
     display: block;
 }
-.body{
+
+.body {
     margin: 0;
     padding: 0;
 }
-.aside{
+
+.aside {
     height: 100vh;
     background-color: var(--main-white-color);
     box-sizing: border-box;
@@ -226,18 +234,20 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.aside__top{
+
+.aside__top {
     display: flex;
     flex-direction: column;
 }
 
-.aside-nav__list{
+.page-nav__list {
     display: flex;
     flex-direction: column;
     gap: 32px;
     margin: 46px 0 32px 0;
 }
-.aside-nav__link{
+
+.page-nav__link {
     font-size: 16px;
     font-family: "TT Lakers", serif;
     cursor: pointer;
@@ -246,15 +256,18 @@
     color: var(--main-text-color);
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.aside-nav__link:hover{
+
+.page-nav__link:hover {
     opacity: 0.7;
 }
-.aside-nav__link--active{
+
+.page-nav__link--active {
     color: var(--accent-text-color);
     position: relative;
 
 }
-.aside-nav__item--active::before{
+
+.page-nav__item--active::before {
     content: "";
     position: absolute;
     left: -33px;
@@ -265,61 +278,74 @@
     border-radius: 30%;
     background: var(--accent-color);
 }
-.aside-footer{
+
+.aside-footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.aside-footer__list{
+
+.aside-footer__list {
     display: flex;
     flex-direction: row;
     gap: 16px;
 }
-.footer__contacts{
+
+.footer__contacts {
     font-style: normal;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.footer__contacts-mail{
+
+.footer__contacts-mail {
     font-family: "TT Lakers", serif;
     font-size: 16px;
     line-height: 24px;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.footer__contacts-mail:hover{
+
+.footer__contacts-mail:hover {
     opacity: 0.7;
 }
-.footer__contacts-phone{
+
+.footer__contacts-phone {
     font-family: "TT Lakers", serif;
     font-size: 20px;
     font-weight: bold;
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
-.footer__contacts-phone:hover{
+
+.footer__contacts-phone:hover {
     opacity: 0.7;
 }
-.languages-list{
+
+.languages-list {
     display: flex;
     flex-direction: row;
     gap: 5px;
     padding-bottom: 15px;
 }
-.languages-list__item{
+
+.languages-list__item {
     transition: background-color 0.3s ease, filter 0.3s ease;
 }
-.languages-list__item:hover{
+
+.languages-list__item:hover {
     opacity: 0.7;
 }
-.languages-link{
+
+.languages-link {
     font-size: 16px;
     font-weight: 500;
     font-family: "TT Lakers", serif;
 }
-.languages-link--active{
+
+.languages-link--active {
     color: var(--accent-text-color);
     font-weight: 400;
 }
+
 @media (min-width: 768px) {
     .header__nav button:nth-child(-n+3) {
         display: flex;
