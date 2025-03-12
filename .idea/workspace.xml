@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e472038e-f24f-4216-9408-0ef6c958fdc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/acer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bosch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/hp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/lenovo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/samsung.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/sony.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/viewsonic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile-menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -32,26 +43,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/suprocket/WebstormProjects/kata_3-1-4/assets/icons&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/suprocket/WebstormProjects/kata_3-1-4/assets/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/icons" />
       <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$/assets/icons" />
       <recent name="$PROJECT_DIR$/assets/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -92,7 +103,9 @@
       <workItem from="1739968463269" duration="19051000" />
       <workItem from="1740136012385" duration="9342000" />
       <workItem from="1740219249682" duration="811000" />
-      <workItem from="1740565505812" duration="336000" />
+      <workItem from="1740565505812" duration="969000" />
+      <workItem from="1740576388415" duration="8000" />
+      <workItem from="1741790793793" duration="13894000" />
     </task>
     <servers />
   </component>
