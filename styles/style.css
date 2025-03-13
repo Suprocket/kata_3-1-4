@@ -347,24 +347,53 @@
     font-weight: 400;
 }
 
+.repair-block{
+    margin-left: 15px;
+    background: #F8F8F8;
+}
+
 .repair-block__title{
+    margin: 0;
+    padding: 16px;
     font-family: "TT Lakers", serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
     color: var(--accent-text-color);
+    background: linear-gradient(to right, #F8F8F8 0%, #ffffff 100%);
 }
-
 
 .swiper{
     position: relative;
     height: auto;
 }
+.swiper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px; /* Ширина тени */
+    height: 100%;
+    transform: translate(0, -35%);
+    z-index: 100;
+    background: linear-gradient(to right, rgba(248,248,248,0), rgba(248,248,248,100));
+    pointer-events: none; /* Чтобы не мешало кликам */
+}
 
 .swiper-wrapper{
     padding-bottom: 40px;
 }
+
+/*.swiper-wrapper::after {*/
+/*    content: "";*/
+/*    position: fixed;*/
+/*    right: 0;*/
+/*    transform: translate(0, -35%);*/
+/*    width: 24px;*/
+/*    height: 100%;*/
+/*    background: linear-gradient(to right, rgba(248,248,248,0), rgba(248,248,248,100));*/
+/*}*/
 
 .swiper-slide{
     border: 1px solid var(--border-color);
@@ -374,7 +403,9 @@
     align-items: center;
     flex-direction: row;
 }
-
+.swiper-slide:last-child{
+    margin-right: 100px !important;
+}
 .swiper-slide__logo{
     padding: 20px 0;
     width: 100px;

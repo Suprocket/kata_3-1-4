@@ -4,7 +4,8 @@ function initSwiper() {
     if (window.innerWidth <= 768 && !swiperInstance) {
         swiperInstance = new Swiper(".swiper", {
             slidesPerView: 1.3,
-            spaceBetween: 16,
+            loop: true,
+            spaceBetween: 20,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: false,
