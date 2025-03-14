@@ -499,6 +499,11 @@
     .show-all-button{
         display: block;
     }
+    .hide-all-button.main__content-read-more::before{
+        rotate: 180deg;
+        top: 0;
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 1024px) {
