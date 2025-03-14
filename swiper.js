@@ -17,12 +17,6 @@ function initSwiper() {
     }
 }
 
-// Проверяем при загрузке страницы
-window.addEventListener("load", initSwiper);
-
-// Проверяем при изменении размера экрана
-window.addEventListener("resize", initSwiper);
-
 const showAllButton = document.querySelector(".show-all-button");
 const hideAllButton = document.querySelector(".hide-all-button");
 
@@ -39,7 +33,14 @@ showAllButton.addEventListener("click", () => {
 hideAllButton.addEventListener("click", () => {
     showAllButton.style.display = "block";
     hideAllButton.style.display = "none";
-    document.querySelectorAll(".swiper-slide:nth-child(n+7)").forEach(slide => {
-        slide.setAttribute("style", "display: none !important;");
-    });
+    if(window.innerWidth > 768 && window.innerWidth < 1024){
+        document.querySelectorAll(".swiper-slide:nth-child(n+7)").forEach(slide => {
+            slide.setAttribute("style", "display: none !important;");
+        });
+    } else{
+        document.querySelectorAll(".swiper-slide:nth-child(n+9)").forEach(slide => {
+            slide.setAttribute("style", "display: none !important;");
+        });
+    }
+
 })
