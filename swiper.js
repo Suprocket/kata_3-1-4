@@ -24,29 +24,22 @@ window.addEventListener("load", initSwiper);
 window.addEventListener("resize", initSwiper);
 
 const showAllButton = document.querySelector(".show-all-button");
-const hideAllButton = document.querySelector(".hide-all-button");
 
 showAllButton.addEventListener("click", () => {
-    showAllButton.style.display = "none";
-    hideAllButton.style.display = "block";
-    document.querySelectorAll(".swiper-slide:nth-child(n+7)").forEach(slide => {
-        slide.setAttribute("style", "display: flex !important;");
-    });
-});
-
-
-
-hideAllButton.addEventListener("click", () => {
-    showAllButton.style.display = "block";
-    hideAllButton.style.display = "none";
-    if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+    const isExpanded = showAllButton.classList.contains("expanded");
+    if (isExpanded) {
         document.querySelectorAll(".swiper-slide:nth-child(n+7)").forEach(slide => {
-            slide.setAttribute("style", "display: none !important;");
+            slide.setAttribute("style", "display: flex !important;");
         });
-    } else if (window.innerWidth > 1024) {
-        document.querySelectorAll(".swiper-slide:nth-child(n+9)").forEach(slide => {
-            slide.setAttribute("style", "display: none !important;");
+        showAllButton.textContent = "Скрыть";
+        document.querySelector('.show-all-button.main__content-read-more').classList.add('rotated');
+        showAllButton.classList.remove("expanded");
+    }else{
+        document.querySelectorAll(".swiper-slide:nth-child(n+7)").forEach(slide => {
+            slide.removeAttribute("style");
         });
+        showAllButton.classList.add("expanded");
+        showAllButton.classList.remove("rotated");
+        showAllButton.textContent = "Показать всё";
     }
-
-})
+});
