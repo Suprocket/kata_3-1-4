@@ -21,10 +21,10 @@
 
 :root {
     --main-white-color: #ffffff;
-    --main-background-color: #F8F8F8;
-    --accent-color: #41F6D7;
     --main-text-color: #1B1C21;
+    --accent-color: #41F6D7;
     --accent-text-color: #7E7E82;
+    --accent-block-line: #D9FFF5;
     --icon-color: #FF3E79;
     --background-color: #F8F8F8;
     --border-color: #EAEAEA;
@@ -114,6 +114,7 @@
     justify-content: space-between;
     padding: 24px 16px;
     background: var(--main-white-color);
+    border-bottom: 1px solid var(--accent-block-line);
 }
 .header__left{
     display: flex;
@@ -173,14 +174,14 @@
 
 .main__navigation-list-item {
     padding: 8px 16px;
-    background: var(--main-background-color);
+    background: var(--background-color);
 }
 
 .main__navigation-list-item-link {
     font-weight: 500;
     white-space: nowrap;
     color: var(--accent-text-color);
-    background: var(--main-background-color);
+    background: var(--background-color);
     line-height: 24px;
     letter-spacing: -0.2px;
     font-size: 16px;
@@ -216,7 +217,7 @@
     position: relative;
     padding-left: 30px;
     font-size: 16px;
-    background: var(--main-background-color);
+    background: var(--background-color);
 }
 
 .main__content-read-more::before {
@@ -362,12 +363,11 @@
 }
 
 .repair-block{
-    padding-left: 15px;
     background: #F8F8F8;
 }
 
 .repair-block__title{
-    margin: 0;
+    margin-top: 24px;
     padding: 16px;
     font-family: "TT Lakers", serif;
     font-size: 16px;
@@ -376,6 +376,8 @@
     text-transform: uppercase;
     color: var(--accent-text-color);
     background: linear-gradient(to right, #F8F8F8 0%, #ffffff 100%);
+    border-top: 1px solid var(--accent-block-line);
+
 }
 
 .slider{
@@ -396,6 +398,7 @@
 }
 
 .slider__wrapper{
+    padding-left: 16px;
     padding-bottom: 40px;
 }
 
