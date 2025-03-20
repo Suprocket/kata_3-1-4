@@ -5,12 +5,31 @@ function initSwiper() {
         swiperInstance = new Swiper(".swiper", {
             slidesPerView: 1.3,
             loop: true,
+            spaceBetween: 16,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+            },
+        });
+        swiperInstance = new Swiper(".swiper-2", {
+            slidesPerView: 1.3,
+            loop: true,
+            spaceBetween: 16,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+            },
+        });
+        swiperInstance = new Swiper(".swiper-3", {
+            slidesPerView: 1.4,
+            loop: true,
             spaceBetween: 20,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: false,
             },
         });
+
     } else if (window.innerWidth > 768 && swiperInstance) {
         swiperInstance.destroy(true, true);
         swiperInstance = undefined;
