@@ -12,7 +12,7 @@
 <div class="container">
     <aside class="aside">
         <header class="header-mobile">
-            <button class="button-menu button-reset">
+            <button class="button-menu close-aside-btn button-reset">
                 <img src="assets/icons/icon_exit.svg" alt="Exit button">
             </button>
             <a href="#" class="logo">
@@ -88,401 +88,404 @@
             </ul>
         </footer>
     </aside>
-    <header class="header header__main">
-        <div class="header__container">
-            <div class="header__left">
-                <button class="button-menu button-reset">
-                    <img src="assets/icons/icon_menu-burger.svg" alt="Меню">
-                </button>
-                <a href="#" class="logo">
-                    <img src="assets/icons/logo.svg" alt="Логотип">
-                </a>
-            </div>
-            <nav class="nav header__nav">
-                <button href="#" class="nav__action button-menu button-reset">
-                    <img src="assets/icons/icon_phone.svg" alt="Телефон">
-                </button>
-                <button href="#" class="nav__action button-menu button-reset">
-                    <img src="assets/icons/icon_message.svg" alt="Сообщение">
-                </button>
-                <button href="#" class="nav__action button-menu button-reset">
-                    <img src="assets/icons/icon_client.svg" alt="Персональный раздел">
-                </button>
-                <button href="#" class="nav__action button-menu button-reset">
-                    <img src="assets/icons/icon_refactor.svg" alt="Сервис">
-                </button>
-                <button href="#" class="nav__action button-menu button-reset">
-                    <img src="assets/icons/icon_search.svg" alt="Поиск">
-                </button>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="main__header">
-            <div class="main__header-container">
-                <h1 class="main__title">Услуги и сервисы</h1>
-                <nav class="main__nav-1024px">
-                    <button href="#" class="main__nav-link button-reset">
-                        <span class="main__nav-text">Оставить заявку</span>
+    <div class="overlay"></div>
+    <div class="main-wrapper">
+        <header class="header header__main">
+            <div class="header__container">
+                <div class="header__left">
+                    <button class="button-menu open-aside-btn button-reset">
+                        <img src="assets/icons/icon_menu-burger.svg" alt="Меню">
+                    </button>
+                    <a href="#" class="logo">
+                        <img src="assets/icons/logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <nav class="nav header__nav">
+                    <button href="#" class="nav__action button-menu button-reset">
+                        <img src="assets/icons/icon_phone.svg" alt="Телефон">
+                    </button>
+                    <button href="#" class="nav__action button-menu button-reset">
+                        <img src="assets/icons/icon_message.svg" alt="Сообщение">
+                    </button>
+                    <button href="#" class="nav__action button-menu button-reset">
+                        <img src="assets/icons/icon_client.svg" alt="Персональный раздел">
+                    </button>
+                    <button href="#" class="nav__action button-menu button-reset">
                         <img src="assets/icons/icon_refactor.svg" alt="Сервис">
                     </button>
-                    <button href="#" class="main__nav-link button-reset">
-                        <span class="main__nav-text">Статус ремонта</span>
+                    <button href="#" class="nav__action button-menu button-reset">
                         <img src="assets/icons/icon_search.svg" alt="Поиск">
                     </button>
                 </nav>
             </div>
-            <div class="main__menu">
-                <nav class="main__navigation">
-                    <ul class="main__navigation-list list-and-link-reset">
-                        <li class="main__navigation-list-item main__navigation-list-item--active">
-                            <a class="main__navigation-list-item-link main__navigation-list-item-link--active button-reset">Ремонтируемые бренды
-                            </a>
-                        </li>
-                        <li class="main__navigation-list-item">
-                            <a class="main__navigation-list-item-link button-reset">Ремонтируемые устройства
-                            </a>
-                        </li>
-                        <li class="main__navigation-list-item">
-                            <a class="main__navigation-list-item-link link-style-reset">Дополнительные услуги
-                            </a>
-                        </li>
-                        <li class="main__navigation-list-item">
-                            <a class="main__navigation-list-item-link link-style-reset">Цены на услуги</a>
-                        </li>
-                        <li class="main__navigation-list-item">
-                            <a class="main__navigation-list-item-link link-style-reset">Адреса сервисных центров
-                            </a>
-                        </li>
-                        <li class="main__navigation-list-item">
-                            <a class="main__navigation-list-item-link link-style-reset">Специальные цены</a>
-                        </li>
-                        <li class="main__navigation-list-item">
-                            <a class="main__navigation-list-item-link link-style-reset">Отзывы</a>
-                        </li>
-                    </ul>
-                </nav>
+        </header>
+        <main class="main">
+            <div class="main__header">
+                <div class="main__header-container">
+                    <h1 class="main__title">Услуги и сервисы</h1>
+                    <nav class="main__nav-1024px">
+                        <button href="#" class="main__nav-link button-reset">
+                            <span class="main__nav-text">Оставить заявку</span>
+                            <img src="assets/icons/icon_refactor.svg" alt="Сервис">
+                        </button>
+                        <button href="#" class="main__nav-link button-reset">
+                            <span class="main__nav-text">Статус ремонта</span>
+                            <img src="assets/icons/icon_search.svg" alt="Поиск">
+                        </button>
+                    </nav>
+                </div>
+                <div class="main__menu">
+                    <nav class="main__navigation">
+                        <ul class="main__navigation-list list-and-link-reset">
+                            <li class="main__navigation-list-item main__navigation-list-item--active">
+                                <a class="main__navigation-list-item-link main__navigation-list-item-link--active button-reset">Ремонтируемые бренды
+                                </a>
+                            </li>
+                            <li class="main__navigation-list-item">
+                                <a class="main__navigation-list-item-link button-reset">Ремонтируемые устройства
+                                </a>
+                            </li>
+                            <li class="main__navigation-list-item">
+                                <a class="main__navigation-list-item-link link-style-reset">Дополнительные услуги
+                                </a>
+                            </li>
+                            <li class="main__navigation-list-item">
+                                <a class="main__navigation-list-item-link link-style-reset">Цены на услуги</a>
+                            </li>
+                            <li class="main__navigation-list-item">
+                                <a class="main__navigation-list-item-link link-style-reset">Адреса сервисных центров
+                                </a>
+                            </li>
+                            <li class="main__navigation-list-item">
+                                <a class="main__navigation-list-item-link link-style-reset">Специальные цены</a>
+                            </li>
+                            <li class="main__navigation-list-item">
+                                <a class="main__navigation-list-item-link link-style-reset">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="main__content">
-            <div class="main__content-left-side">
-                <p class="main__content-text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать
-                    свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="main__content-text text-for-768px">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                </p>
-                <p class="main__content-text text-for-1024px">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                    очередь, советуют нас родным и близким.
-                </p>
-                <button class="main__content-read-more button-reset">Читать далее</button>
-            </div>
-            <div class="main__content-right-side">
-                <img class="main__content-img" src="assets/img/img_repair_devices.png" alt="Ремонт устройств">
-            </div>
+            <div class="main__content">
+                <div class="main__content-left-side">
+                    <p class="main__content-text">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                        отремонтировать
+                        свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <p class="main__content-text text-for-768px">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                    </p>
+                    <p class="main__content-text text-for-1024px">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                        количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                        очередь, советуют нас родным и близким.
+                    </p>
+                    <button class="main__content-read-more button-reset">Читать далее</button>
+                </div>
+                <div class="main__content-right-side">
+                    <img class="main__content-img" src="assets/img/img_repair_devices.png" alt="Ремонт устройств">
+                </div>
 
-        </div>
-        <section class="repair-block container">
-            <h3 class="repair-block__title">Ремонт техники различных брендов</h3>
-            <div class="swiper slider">
-                <div class="swiper-wrapper slider__wrapper">
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/lenovo.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/samsung.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/apple.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/viewsonic.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/bosch.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/hp.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/acer.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/sony.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/lenovo.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/samsung.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide">
-                        <img src="assets/img/apple.svg" class="slider__slide-logo" alt="logo">
-                        <button class="slider__slide-button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                </div>
-                <div class="swiper-pagination slider__pagination"></div>
             </div>
-            <button class="main__content-read-more show-all-button expanded button-reset">Показать всё</button>
-            <h3 class="repair-block__title">Ремонт различных видов техники</h3>
-            <div class="swiper swiper-2 slider">
-                <div class="swiper-wrapper slider__wrapper">
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт ноутбуков</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
+            <section class="repair-block">
+                <h3 class="repair-block__title">Ремонт техники различных брендов</h3>
+                <div class="swiper slider">
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/lenovo.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/samsung.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/apple.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/viewsonic.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/bosch.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/hp.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/acer.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/sony.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/lenovo.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/samsung.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide">
+                            <img src="assets/img/apple.svg" class="slider__slide-logo" alt="logo">
+                            <button class="slider__slide-button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
                     </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт планшетов</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт ПК</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт мониторов</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт ноутбуков</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт ноутбуков</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт ноутбуков</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
-                    <div class="swiper-slide slider__slide slide-tech">
-                        <p class="slide-tech__title">Ремонт ноутбуков</p>
-                        <button class="slider__slide-button slide-tech__button button-reset">
-                            <img src="assets/img/dropdown.png" alt="dropdown">
-                        </button>
-                    </div>
+                    <div class="swiper-pagination slider__pagination"></div>
                 </div>
-                <div class="swiper-pagination slider__pagination"></div>
-            </div>
-            <button class="main__content-read-more show-all-button expanded button-reset">Показать всё</button>
-            <h3 class="repair-block__title slider-prices">Цены на услуги</h3>
-            <div class="swiper swiper-3 slider">
-                <div class="swiper-wrapper slider__wrapper ">
-                    <div class="swiper-slide slider__slide slider-price">
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Ремонтные услуги</h4>
-                            <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
+                <button class="main__content-read-more show-all-button expanded button-reset">Показать всё</button>
+                <h3 class="repair-block__title">Ремонт различных видов техники</h3>
+                <div class="swiper swiper-2 slider">
+                    <div class="swiper-wrapper slider__wrapper">
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт ноутбуков</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
                         </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Цена</h4>
-                            <p class="slider-info__text">Бесплатно</p>
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт планшетов</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
                         </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Срок</h4>
-                            <p class="slider-info__text">30-120 мин</p>
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт ПК</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
                         </div>
-                        <button class="slider__info-buy-btn btn-slider-position button-reset">
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт мониторов</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт ноутбуков</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт ноутбуков</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт ноутбуков</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slide-tech">
+                            <p class="slide-tech__title">Ремонт ноутбуков</p>
+                            <button class="slider__slide-button slide-tech__button button-reset">
+                                <img src="assets/img/dropdown.png" alt="dropdown">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination slider__pagination"></div>
+                </div>
+                <button class="main__content-read-more show-all-button expanded button-reset">Показать всё</button>
+                <h3 class="repair-block__title slider-prices">Цены на услуги</h3>
+                <div class="swiper swiper-3 slider">
+                    <div class="swiper-wrapper slider__wrapper ">
+                        <div class="swiper-slide slider__slide slider-price">
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Ремонтные услуги</h4>
+                                <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Цена</h4>
+                                <p class="slider-info__text">Бесплатно</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Срок</h4>
+                                <p class="slider-info__text">30-120 мин</p>
+                            </div>
+                            <button class="slider__info-buy-btn btn-slider-position button-reset">
+                                Заказать
+                                <img src="assets/img/dropdown-white.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slider-price">
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Ремонтные услуги</h4>
+                                <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Цена</h4>
+                                <p class="slider-info__text">Бесплатно</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Срок</h4>
+                                <p class="slider-info__text">30-120 мин</p>
+                            </div>
+                            <button class="slider__info-buy-btn btn-slider-position button-reset">
+                                Заказать
+                                <img src="assets/img/dropdown-white.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slider-price">
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Ремонтные услуги</h4>
+                                <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Цена</h4>
+                                <p class="slider-info__text">Бесплатно</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Срок</h4>
+                                <p class="slider-info__text">30-120 мин</p>
+                            </div>
+                            <button class="slider__info-buy-btn btn-slider-position button-reset">
+                                Заказать
+                                <img src="assets/img/dropdown-white.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slider-price">
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Ремонтные услуги</h4>
+                                <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Цена</h4>
+                                <p class="slider-info__text">Бесплатно</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Срок</h4>
+                                <p class="slider-info__text">30-120 мин</p>
+                            </div>
+                            <button class="slider__info-buy-btn btn-slider-position button-reset">
+                                Заказать
+                                <img src="assets/img/dropdown-white.png" alt="dropdown">
+                            </button>
+                        </div>
+                        <div class="swiper-slide slider__slide slider-price">
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Ремонтные услуги</h4>
+                                <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Цена</h4>
+                                <p class="slider-info__text">Бесплатно</p>
+                            </div>
+                            <div class="slider-info">
+                                <h4 class="slider-info__title">Срок</h4>
+                                <p class="slider-info__text">30-120 мин</p>
+                            </div>
+                            <button class="slider__info-buy-btn btn-slider-position button-reset">
+                                Заказать
+                                <img src="assets/img/dropdown-white.png" alt="dropdown">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination slider__pagination"></div>
+                </div>
+                <div class="block-prices">
+                    <div class="block-prices__title">Ремонтные услуги</div>
+                    <div class="block-prices__title">Цена</div>
+                    <div class="block-prices__title">Срок</div>
+                    <div class="block-prices__title"></div>
+                    <div class="block-prices-item">Диагностика</div>
+                    <div class="block-prices-item">Бесплатно</div>
+                    <div class="block-prices-item">30 мин.</div>
+                    <div class="block-prices-item">
+                        <button class="slider__info-buy-btn button-reset">
                             Заказать
                             <img src="assets/img/dropdown-white.png" alt="dropdown">
                         </button>
                     </div>
-                    <div class="swiper-slide slider__slide slider-price">
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Ремонтные услуги</h4>
-                            <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Цена</h4>
-                            <p class="slider-info__text">Бесплатно</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Срок</h4>
-                            <p class="slider-info__text">30-120 мин</p>
-                        </div>
-                        <button class="slider__info-buy-btn btn-slider-position button-reset">
+                    <div class="block-prices-item">Замена дисплея</div>
+                    <div class="block-prices-item">1 000 ₽</div>
+                    <div class="block-prices-item">30-120 мин.</div>
+                    <div class="block-prices-item">
+                        <button class="slider__info-buy-btn button-reset">
                             Заказать
                             <img src="assets/img/dropdown-white.png" alt="dropdown">
                         </button>
                     </div>
-                    <div class="swiper-slide slider__slide slider-price">
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Ремонтные услуги</h4>
-                            <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Цена</h4>
-                            <p class="slider-info__text">Бесплатно</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Срок</h4>
-                            <p class="slider-info__text">30-120 мин</p>
-                        </div>
-                        <button class="slider__info-buy-btn btn-slider-position button-reset">
+                    <div class="block-prices-item">Замена полифонического динамика</div>
+                    <div class="block-prices-item">1 000 ₽</div>
+                    <div class="block-prices-item">30-120 мин.</div>
+                    <div class="block-prices-item">
+                        <button class="slider__info-buy-btn button-reset">
                             Заказать
                             <img src="assets/img/dropdown-white.png" alt="dropdown">
                         </button>
                     </div>
-                    <div class="swiper-slide slider__slide slider-price">
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Ремонтные услуги</h4>
-                            <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Цена</h4>
-                            <p class="slider-info__text">Бесплатно</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Срок</h4>
-                            <p class="slider-info__text">30-120 мин</p>
-                        </div>
-                        <button class="slider__info-buy-btn btn-slider-position button-reset">
+                    <div class="block-prices-item">Тестирование с выдачей технического заключения</div>
+                    <div class="block-prices-item">1 000 ₽</div>
+                    <div class="block-prices-item">30-120 мин.</div>
+                    <div class="block-prices-item">
+                        <button class="slider__info-buy-btn button-reset">
                             Заказать
                             <img src="assets/img/dropdown-white.png" alt="dropdown">
                         </button>
                     </div>
-                    <div class="swiper-slide slider__slide slider-price">
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Ремонтные услуги</h4>
-                            <p class="slider-info__text">Тестирование с выдачей технического заключения</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Цена</h4>
-                            <p class="slider-info__text">Бесплатно</p>
-                        </div>
-                        <div class="slider-info">
-                            <h4 class="slider-info__title">Срок</h4>
-                            <p class="slider-info__text">30-120 мин</p>
-                        </div>
-                        <button class="slider__info-buy-btn btn-slider-position button-reset">
+                    <div class="block-prices-item">Замена программного обеспечения</div>
+                    <div class="block-prices-item">1 000 ₽</div>
+                    <div class="block-prices-item">30-120 мин.</div>
+                    <div class="block-prices-item">
+                        <button class="slider__info-buy-btn button-reset">
                             Заказать
                             <img src="assets/img/dropdown-white.png" alt="dropdown">
                         </button>
                     </div>
                 </div>
-                <div class="swiper-pagination slider__pagination"></div>
-            </div>
-            <div class="block-prices">
-                <div class="block-prices__title">Ремонтные услуги</div>
-                <div class="block-prices__title">Цена</div>
-                <div class="block-prices__title">Срок</div>
-                <div class="block-prices__title"></div>
-                <div class="block-prices-item">Диагностика</div>
-                <div class="block-prices-item">Бесплатно</div>
-                <div class="block-prices-item">30 мин.</div>
-                <div class="block-prices-item">
-                    <button class="slider__info-buy-btn button-reset">
-                        Заказать
-                        <img src="assets/img/dropdown-white.png" alt="dropdown">
-                    </button>
+            </section>
+            <section class="main-footer">
+                <div class="about-price">
+                    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
                 </div>
-                <div class="block-prices-item">Замена дисплея</div>
-                <div class="block-prices-item">1 000 ₽</div>
-                <div class="block-prices-item">30-120 мин.</div>
-                <div class="block-prices-item">
-                    <button class="slider__info-buy-btn button-reset">
-                        Заказать
-                        <img src="assets/img/dropdown-white.png" alt="dropdown">
-                    </button>
-                </div>
-                <div class="block-prices-item">Замена полифонического динамика</div>
-                <div class="block-prices-item">1 000 ₽</div>
-                <div class="block-prices-item">30-120 мин.</div>
-                <div class="block-prices-item">
-                    <button class="slider__info-buy-btn button-reset">
-                        Заказать
-                        <img src="assets/img/dropdown-white.png" alt="dropdown">
-                    </button>
-                </div>
-                <div class="block-prices-item">Тестирование с выдачей технического заключения</div>
-                <div class="block-prices-item">1 000 ₽</div>
-                <div class="block-prices-item">30-120 мин.</div>
-                <div class="block-prices-item">
-                    <button class="slider__info-buy-btn button-reset">
-                        Заказать
-                        <img src="assets/img/dropdown-white.png" alt="dropdown">
-                    </button>
-                </div>
-                <div class="block-prices-item">Замена программного обеспечения</div>
-                <div class="block-prices-item">1 000 ₽</div>
-                <div class="block-prices-item">30-120 мин.</div>
-                <div class="block-prices-item">
-                    <button class="slider__info-buy-btn button-reset">
-                        Заказать
-                        <img src="assets/img/dropdown-white.png" alt="dropdown">
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="main-footer container">
-            <div class="about-price">
-                Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
-            </div>
-            <a href="#" class="call-to-action list-and-link-reset">
-                Получить коммерческое предложение
-                <img src="assets/img/dropdown.png" alt="Стрелка" class="dropdown">
-            </a>
-        </section>
+                <a href="#" class="call-to-action list-and-link-reset">
+                    Получить коммерческое предложение
+                    <img src="assets/img/dropdown.png" alt="Стрелка" class="dropdown">
+                </a>
+            </section>
 
-    </main>
-    <footer class="footer">
-        <div class="footer-info">© 2019 CPS </br>
-            Разработано командой Apesong </div>
-        <div class="footer-info">Политика конфиденциальности</div>
-        <div class="footer-info">Информация, размещенная на данной странице, не является публичной офертой</div>
-    </footer>
+        </main>
+        <footer class="footer">
+            <div class="footer-info">© 2019 CPS </br>
+                Разработано командой Apesong </div>
+            <div class="footer-info">Политика конфиденциальности</div>
+            <div class="footer-info">Информация, размещенная на данной странице, не является публичной офертой</div>
+        </footer>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="swiper.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -71,6 +71,8 @@
 }
 
 .header-mobile {
+    margin-top: 8px;
+    margin-left: 1px;
     background: #fff;
     display: flex;
     flex-direction: row;
@@ -247,13 +249,13 @@
     width: 100%;
     max-width: 360px;
     box-shadow: 16px 0 52px 0 #0E185033, -2px 0 4px #454F7E05;
-    padding: 18px 23px 32px 23px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 16px 15px 32px 15px;
     position: absolute;
     z-index: 1000;
-
+    visibility: hidden;
+}
+.aside--active {
+    visibility: visible;
 }
 
 .aside__top {
@@ -537,10 +539,30 @@
 .block-prices{
     display: none;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 999; /* Поверх всего */
+}
+
+.overlay--active {
+    opacity: 0.95;
+    visibility: visible;
+}
 
 @media (min-width: 768px) {
     .aside{
         max-width: 320px;
+    }
+    .aside-footer {
+        margin-top: 250px;
     }
     .header__nav button:nth-child(-n+3) {
         display: flex;
@@ -654,11 +676,13 @@
     }
     .main-footer{
         margin-top: 24px;
+        max-width: 500px;
     }
     .footer{
         flex-direction: row;
         gap: 30px;
         align-items: start;
+        justify-content: space-between;
     }
     .footer-info{
         text-align: start;
@@ -670,10 +694,6 @@
 }
 
 @media (min-width: 1024px) {
-    .header__main {
-        display: none;
-    }
-
     .main__header-container {
         display: flex;
         flex-direction: row;
@@ -745,5 +765,25 @@
     }
     .slider__slide:nth-child(n+9) {
         display: none !important;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1440px;
+    }
+    .aside{
+        height: auto;
+        visibility: visible;
+        position: static;
+        box-shadow: none;
+    }
+    .header__container{
+        display: none;
+    }
+    .close-aside-btn{
+        display: none;
     }
 }
