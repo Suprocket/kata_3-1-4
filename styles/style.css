@@ -422,9 +422,6 @@
 .slider__slide:hover {
     cursor: pointer;
 }
-.slider__slide:last-child{
-    margin-right: 100px !important;
-}
 .slider__slide-logo{
     padding: 20px 0;
     width: 100px;
@@ -442,7 +439,7 @@
     height: 40px;
 }
 
-.slider-pagination{
+.slider__pagination{
     position: relative;
 }
 .swiper-pagination-bullet{
@@ -507,6 +504,7 @@
 
 .about-price{
     padding: 0 16px;
+    margin-top: 16px;
 }
 .call-to-action{
     margin-top: 16px;
@@ -562,7 +560,7 @@
         max-width: 320px;
     }
     .aside-footer {
-        margin-top: 250px;
+        margin-top: 150px;
     }
     .header__nav button:nth-child(-n+3) {
         display: flex;
@@ -615,7 +613,7 @@
         padding-left: 16px;
     }
 
-    .slider__slide:nth-child(n+7) {
+    .slide-logo:nth-child(n+7) {
         display: none !important;
     }
 
@@ -637,6 +635,9 @@
         rotate: 180deg;
         top: 0;
         transform: translateY(0);
+    }
+    .slide-tech:nth-child(n+4) {
+        display: none !important;
     }
     .swiper-3{
         display: none !important;
@@ -760,10 +761,16 @@
         max-width: 1120px;
         grid-template-columns: repeat(4, 1fr);
     }
-    .slider__slide:nth-child(n-9) {
+    .slide-logo:nth-child(n-9) {
         display: flex !important;
     }
-    .slider__slide:nth-child(n+9) {
+    .slide-logo:nth-child(n+9) {
+        display: none !important;
+    }
+    .slide-tech:nth-child(n-5) {
+        display: flex !important;
+    }
+    .slide-tech:nth-child(n+5) {
         display: none !important;
     }
 }
