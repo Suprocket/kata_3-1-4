@@ -13,6 +13,26 @@ document.querySelector(".overlay").addEventListener("click", function () {
     document.querySelector(".aside").classList.remove("aside--active");
 });
 
+document.querySelector(".open-aside-order").addEventListener("click", function () {
+    document.querySelector(".overlay").classList.add("overlay--active");
+    document.querySelector(".aside-order").classList.add("aside--active");
+});
+
+document.querySelector(".open-aside-feedback").addEventListener("click", function () {
+    document.querySelector(".overlay").classList.add("overlay--active");
+    document.querySelector(".aside-feedback").classList.add("aside--active");
+});
+
+document.querySelector(".aside-order__close-btn").addEventListener("click", function () {
+    document.querySelector(".overlay").classList.remove("overlay--active");
+    document.querySelector(".aside-order").classList.remove("aside--active");
+});
+
+document.querySelector(".aside-feedback__close-btn").addEventListener("click", function () {
+    document.querySelector(".overlay").classList.remove("overlay--active");
+    document.querySelector(".aside-feedback").classList.remove("aside--active");
+});
+
 const showAllButtons = document.querySelectorAll(".show-all-button");
 
 for(let i = 0; i < showAllButtons.length; i++) {

@@ -25,6 +25,7 @@
     --accent-color: #41F6D7;
     --accent-text-color: #7E7E82;
     --accent-block-line: #D9FFF5;
+    --accent-grey: #B5B6BC;
     --icon-color: #FF3E79;
     --background-color: #F8F8F8;
     --border-color: #EAEAEA;
@@ -255,7 +256,8 @@
     visibility: hidden;
 }
 .aside--active {
-    visibility: visible;
+    visibility: visible !important;
+    z-index: 5000;
 }
 
 .aside__top {
@@ -447,7 +449,7 @@
     height: 12px !important;
 }
 .swiper-pagination-bullet-active {
-    background: #B5B6BC !important;
+    background: var(--accent-grey) !important;
 }
 .show-all-button{
     display: none;
@@ -555,13 +557,97 @@
     opacity: 0.95;
     visibility: visible;
 }
+.aside-right{
+    max-width: 440px;
+    position: absolute;
+    right: 0;
+    z-index: 2000;
+}
+.aside-feedback, .aside-order{
+    visibility: hidden;
+    height: 100vh;
+    background-color: var(--main-white-color);
+    padding: 24px 16px;
+}
 
+.aside-right__title{
+    margin-top: 32px;
+    font-size: 24px;
+    position: relative;
+}
+.aside-right__title:before{
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 40px;
+    border-radius: 30%;
+    background: var(--accent-color);
+}
+.aside-right__form{
+    margin-top: 24px;
+}
+.aside-right__form > label{
+    visibility: hidden;
+}
+.form-input{
+    margin-bottom: 16px;
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    color: var(--accent-grey);
+    font-family: "TT Lakers", serif;
+    font-size: 16px;
+    padding-left: 16px;
+}
+.form-input::-webkit-input-placeholder {
+    position:absolute;
+    top: 20%;
+    left: 10px;
+    font-size: 16px;
+    color: var(--accent-grey);
+    font-family: "TT Lakers", serif;
+    font-weight: 400;
+}
+.form-textarea::placeholder{
+    top: 10%;
+}
+.form-textarea{
+    height: 120px;
+    padding-top: 10px;
+}
+.aside-right__info{
+    margin-top:0;
+    font-size: 14px;
+    width: 95%;
+    font-weight: 400;
+}
+.aside-right__info-link{
+    color: var(--icon-color);
+    cursor: pointer;
+}
+.feedback__btn{
+    font-size: 12px;
+    position: absolute;
+    right: 8%;
+}
 @media (min-width: 768px) {
     .aside{
         max-width: 320px;
     }
     .aside-footer {
         margin-top: 150px;
+    }
+    .aside-feedback__close-btn, .aside-order__close-btn{
+        position: absolute;
+        left: -60px;
+        top: 30px;
+    }
+    .aside-right__title{
+        margin-top: 10px;
     }
     .header__nav button:nth-child(-n+3) {
         display: flex;
@@ -697,6 +783,7 @@
 
 @media (min-width: 1024px) {
     .main__header-container {
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

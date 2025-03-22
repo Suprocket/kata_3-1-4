@@ -56,12 +56,12 @@
         <footer class="aside-footer">
             <ul class="aside-footer__list list-and-link-reset">
                 <li class="aside-footer__item">
-                    <button href="#" class="nav__action button-menu button-reset">
+                    <button href="#" class="nav__action open-aside-order button-menu button-reset">
                         <img src="assets/icons/icon_phone.svg" alt="Телефон">
                     </button>
                 </li>
                 <li class="aside-footer__item">
-                    <button href="#" class="nav__action button-menu button-reset">
+                    <button href="#" class="nav__action open-aside-feedback button-menu button-reset">
                         <img src="assets/icons/icon_message.svg" alt="Сообщение">
                     </button>
                 </li>
@@ -87,6 +87,43 @@
                 </li>
             </ul>
         </footer>
+    </aside>
+    <aside class="aside-right aside-feedback">
+        <button class="button-menu close-aside-btn aside-feedback__close-btn button-reset">
+            <img src="assets/icons/icon_exit.svg" alt="Exit button">
+        </button>
+        <h3 class="header-mobile aside-right__title">
+            Обратная связь
+        </h3>
+        <form action="#" class="feedback-form aside-right__form" id="feedback-form">
+            <input type="text" class="form-input" id="fname" name="fname" placeholder="Имя" aria-label="Имя"><br>
+            <input type="tel" class="form-input" id="phone" name="phone" placeholder="Телефон" aria-label="Телефон">
+            <input type="email" class="form-input" id="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+            <textarea id="message" class="form-input form-textarea" name="message" placeholder="Сообщение" aria-label="Сообщение"></textarea>
+        </form>
+        <p class="aside-right__info">
+            Нажимая “отправить”, вы даете согласие на <a href="#" class="aside-right__info-link list-and-link-reset">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="aside-right__info-link list-and-link-reset">политикой конфиденциальности</a>
+        </p>
+        <button type="submit" form="feedback-form" value="Submit" class="slider__info-buy-btn feedback__btn button-reset">Отправить
+            <img src="assets/img/dropdown-white.png" alt="dropdown">
+        </button>
+    </aside>
+    <aside class="aside-right aside-order">
+        <button class="button-menu close-aside-btn aside-order__close-btn button-reset">
+            <img src="assets/icons/icon_exit.svg" alt="Exit button">
+        </button>
+        <h3 class="header-mobile aside-right__title">
+            Заказать звонок
+        </h3>
+        <form action="#" class="order-form aside-right__form" id="order-form">
+            <input type="tel" class="form-input phone order-form__phone" id="order-phone" name="order-phone" placeholder="Телефон">
+        </form>
+        <p class="aside-right__info">
+            Нажимая “отправить”, вы даете согласие на <a href="#" class="aside-right__info-link list-and-link-reset">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="aside-right__info-link list-and-link-reset">политикой конфиденциальности</a>
+        </p>
+        <button type="submit" form="order-form" value="Submit" class="slider__info-buy-btn feedback__btn button-reset">Отправить
+            <img src="assets/img/dropdown-white.png" alt="dropdown">
+        </button>
     </aside>
     <div class="overlay"></div>
     <div class="main-wrapper">
